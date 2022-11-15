@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "dc3c83a9-9151-4e86-904b-daa6a7b4fdba": {
+      "ProjectGuid": "dc3c83a9-9151-4e86-904b-daa6a7b4fdba",
+      "DisplayName": "AbetoDesing_SoftwareDAO",
+      "ColorIndex": 0
+    },
+    "fb781e94-b035-4676-b5dd-1009495e01c6": {
+      "ProjectGuid": "fb781e94-b035-4676-b5dd-1009495e01c6",
+      "DisplayName": "AbetoDesing_SoftwareWPF",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
