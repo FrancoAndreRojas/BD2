@@ -11,14 +11,14 @@ namespace AbetoDesing_SoftwareDAO.Model
         public byte Status { get; set; }
         public DateTime RegisterDate { get; set; }
         public DateTime LastUpdate { get; set; }
-        //public int UserID { get; set; }
+        public int UserID { get; set; }
 
-        public BaseTable(byte status, DateTime registerDate, DateTime lastUpdate/*, int userID*/)
+        public BaseTable(byte status, DateTime registerDate, DateTime lastUpdate, int userID)
         {
             Status = status;
             RegisterDate = registerDate;
             LastUpdate = lastUpdate;
-            //UserID = userID;
+            UserID = userID;
         }
         public BaseTable()
         {

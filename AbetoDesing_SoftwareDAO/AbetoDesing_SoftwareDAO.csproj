@@ -52,6 +52,7 @@
     <Compile Include="Model\Material.cs" />
     <Compile Include="Model\Person.cs" />
     <Compile Include="Model\Product.cs" />
+    <Compile Include="Model\Session.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

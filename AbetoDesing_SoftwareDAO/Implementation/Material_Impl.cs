@@ -15,17 +15,34 @@ namespace AbetoDesing_SoftwareDAO.Implementation
     {
         public int Delete(Material t)
         {
-            throw new NotImplementedException();
-        }
-
-        public int Insert(Material t)
-        {
-            string query = @"INSERT INTO Material(name, description, stock)
-                             VALUES (@name, @description, @stock)";
+            string query = @"UPDATE Material SET status=0, lastUpdate=CURRENT_TIMESTAMP, userID=@userID
+                             WHERE id=@id";
             SqlCommand command = CreateBasicCommand(query);
             command.Parameters.AddWithValue("@name", t.Name);
             command.Parameters.AddWithValue("@description", t.Description);
             command.Parameters.AddWithValue("@stock", t.Stock);
+            command.Parameters.AddWithValue("@stock", Session.SessionUserID);
+            command.Parameters.AddWithValue("@stock", t.Id);
+            try
+            {
+                return ExecuteBasicCommand(command);
+            }
+            catch (Exception ex)
+            {
+                //Log
+                throw ex;
+            }
+        }
+
+        public int Insert(Material t)
+        {
+            string query = @"INSERT INTO Material(name, description, stock, userID)
+                             VALUES (@name, @description, @stock, userID)";
+            SqlCommand command = CreateBasicCommand(query);
+            command.Parameters.AddWithValue("@name", t.Name);
+            command.Parameters.AddWithValue("@description", t.Description);
+            command.Parameters.AddWithValue("@stock", t.Stock);
+            command.Parameters.AddWithValue("@stock", Session.SessionUserID);
             try
             {
                 return ExecuteBasicCommand(command);
@@ -63,7 +80,23 @@ namespace AbetoDesing_SoftwareDAO.Implementation
 
         public int Update(Material t)
         {
-            throw new NotImplementedException();
+            string query = @"UPDATE Material SET name=@name, description=@description, lastUpdate=CURRENT_TIMESTAMP, userID=@userID
+                             WHERE id=@id ";
+            SqlCommand command = CreateBasicCommand(query);
+            command.Parameters.AddWithValue("@name", t.Name);
+            command.Parameters.AddWithValue("@description", t.Description);
+            command.Parameters.AddWithValue("@stock", t.Stock);
+            command.Parameters.AddWithValue("@stock", Session.SessionUserID);
+            command.Parameters.AddWithValue("@stock", t.Id);
+            try
+            {
+                return ExecuteBasicCommand(command);
+            }
+            catch (Exception ex)
+            {
+                //Log
+                throw ex;
+            }
         }
     }
 }

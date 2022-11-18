@@ -1,0 +1,5 @@
+C:\Users\Hogar\Source\Repos\AbetoDesing_Software\AbetoDesing_SoftwareDAO\bin\Debug\AbetoDesing_SoftwareDAO.dll
+C:\Users\Hogar\Source\Repos\AbetoDesing_Software\AbetoDesing_SoftwareDAO\bin\Debug\AbetoDesing_SoftwareDAO.pdb
+C:\Users\Hogar\Source\Repos\AbetoDesing_Software\AbetoDesing_SoftwareDAO\obj\Debug\AbetoDesing_SoftwareDAO.csproj.CoreCompileInputs.cache
+C:\Users\Hogar\Source\Repos\AbetoDesing_Software\AbetoDesing_SoftwareDAO\obj\Debug\AbetoDesing_SoftwareDAO.dll
+C:\Users\Hogar\Source\Repos\AbetoDesing_Software\AbetoDesing_SoftwareDAO\obj\Debug\AbetoDesing_SoftwareDAO.pdb

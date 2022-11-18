@@ -29,9 +29,9 @@ namespace AbetoDesing_SoftwareDAO.Model
         /// <param name="status"></param>
         /// <param name="registerDate"></param>
         /// <param name="lastUpdate"></param>
-        ///// <param name="userID"></param>
-        public Material(int id, string name, string description, short stock, byte status, DateTime registerDate, DateTime lastUpdate/*, int userID*/)
-             : base(status, registerDate, lastUpdate/*, userID*/)
+        /// <param name="userID"></param>
+        public Material(int id, string name, string description, short stock, byte status, DateTime registerDate, DateTime lastUpdate, int userID)
+             : base(status, registerDate, lastUpdate, userID)
         {
             Id = id;
             Name = name;

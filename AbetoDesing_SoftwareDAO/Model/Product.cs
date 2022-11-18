@@ -32,9 +32,9 @@ namespace AbetoDesing_SoftwareDAO.Model
         /// <param name="status"></param>
         /// <param name="registerDate"></param>
         /// <param name="lastUpdate"></param>
-        ///// <param name="userID"></param>
-        public Product(int id, string name, string image, short price, string description, string type, int stock, byte status, DateTime registerDate, DateTime lastUpdate/*, int userID*/)
-            : base(status, registerDate, lastUpdate/*, userID*/)
+        /// <param name="userID"></param>
+        public Product(int id, string name, string image, short price, string description, string type, int stock, byte status, DateTime registerDate, DateTime lastUpdate, int userID)
+            : base(status, registerDate, lastUpdate, userID)
         {
             Id = id;
             Name = name;
@@ -62,6 +62,10 @@ namespace AbetoDesing_SoftwareDAO.Model
             Description = description;
             Type = type;
             Stock = stock;
+        }
+
+        public Product(int v1, string v2, string v3, short v4, string v5, string v6, int v7, byte v8, DateTime dateTime1, DateTime dateTime2)
+        {
         }
 
         #endregion

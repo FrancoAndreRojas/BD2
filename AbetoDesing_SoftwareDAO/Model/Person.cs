@@ -33,10 +33,10 @@ namespace AbetoDesing_SoftwareDAO.Model
         /// <param name="status"></param>
         /// <param name="registerDate"></param>
         /// <param name="lastUpdate"></param>
-        ///// <param name="userID"></param>
+        /// <param name="userID"></param>
 
-        public Person(int id, string name, string surname, string secondSurname, int ruc, string adress, short phoneNumber, double latitude, double longitude, byte status, DateTime registerDate, DateTime lastUpdate/*, int userID*/)
-            : base(status, registerDate, lastUpdate/*, userID*/)
+        public Person(int id, string name, string surname, string secondSurname, int ruc, string adress, short phoneNumber, double latitude, double longitude, byte status, DateTime registerDate, DateTime lastUpdate, int userID)
+            : base(status, registerDate, lastUpdate, userID)
         {
             Id = id;
             Name = name;
